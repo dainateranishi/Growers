@@ -12,11 +12,13 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var MenuView: UIView!
     @IBOutlet weak var ContentView: UIView!
-    @IBOutlet weak var CloseButton: UIButton!
     @IBOutlet weak var ToolBer: PencilCaseView!
     @IBOutlet weak var AddPageButton: UIButton!
     @IBOutlet weak var ContentViewHeight: NSLayoutConstraint!
     @IBOutlet weak var MemberTable: UITableView!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var noteButton: UIButton!
+    @IBOutlet weak var settingButton: UIButton!
     private var disposeBag = DisposeBag()
     private var CanvasHeight: CGFloat?
     private var CanvasWidht: CGFloat?
@@ -25,10 +27,10 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
     var PagenNum = 1
     var MemList:[Member] = [Member]()
     
-    class func instantiate() -> StudyRoomViewController {
-        let controller = UIStoryboard(name: "studyRoom", bundle: .main).instantiateInitialViewController() as! StudyRoomViewController
-        return controller
-    }
+//    class func instantiate() -> StudyRoomViewController {
+//        let controller = UIStoryboard(name: "studyRoom", bundle: .main).instantiateInitialViewController() as! StudyRoomViewController
+//        return controller
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +48,6 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
         CanvasHeight = ContentView.frame.size.height
         CanvasWidht = ContentView.frame.size.width
         self.setupNote()
-        
-        bind()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -69,12 +69,6 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
             }
         })
     }
-    
-        private func bind() {
-            CloseButton.rx.tap.asDriver().throttle(.seconds(1), latest: false).drive(onNext: { [weak self] in
-                self?.dismiss(animated: true, completion: nil)
-            }).disposed(by: disposeBag)
-        }
     
     
     //MemberTable setup

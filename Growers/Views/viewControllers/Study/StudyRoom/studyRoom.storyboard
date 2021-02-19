@@ -19,35 +19,63 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bv-ga-dgt">
                                 <rect key="frame" x="20" y="1060" width="780" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxK-tS-Q1N">
-                                        <rect key="frame" x="42" y="13" width="122" height="59"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lat-um-c67">
+                                        <rect key="frame" x="353.5" y="19.5" width="73" height="41"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="122" id="MuY-zs-awV"/>
+                                            <constraint firstAttribute="width" constant="73" id="8tQ-g9-1bs"/>
+                                            <constraint firstAttribute="height" constant="41" id="bWz-Z2-1Lw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="戻る">
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ノート">
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Q4-Xp-AE2">
+                                        <rect key="frame" x="633" y="19.5" width="83" height="41"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="Y6q-fM-xn6"/>
+                                            <constraint firstAttribute="height" constant="41" id="YFV-uu-MoX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="設定">
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRw-cC-rNr">
+                                        <rect key="frame" x="74" y="19.5" width="73" height="41"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="OsE-HY-vDH"/>
+                                            <constraint firstAttribute="height" constant="41" id="vh5-84-LPM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="ホーム">
                                             <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstItem="gxK-tS-Q1N" firstAttribute="leading" secondItem="7Bv-ga-dgt" secondAttribute="leading" constant="42" id="A20-WN-qyj"/>
+                                    <constraint firstItem="9Q4-Xp-AE2" firstAttribute="centerY" secondItem="7Bv-ga-dgt" secondAttribute="centerY" id="91X-fA-N7h"/>
                                     <constraint firstAttribute="height" constant="80" id="Q9C-vn-NTi"/>
-                                    <constraint firstItem="gxK-tS-Q1N" firstAttribute="top" secondItem="7Bv-ga-dgt" secondAttribute="top" constant="13" id="hkW-7i-L5P"/>
-                                    <constraint firstItem="gxK-tS-Q1N" firstAttribute="bottom" secondItem="7Bv-ga-dgt" secondAttribute="bottomMargin" id="ubP-JA-HA1"/>
+                                    <constraint firstItem="lat-um-c67" firstAttribute="centerX" secondItem="7Bv-ga-dgt" secondAttribute="centerX" id="UAP-9u-fd0"/>
+                                    <constraint firstItem="9Q4-Xp-AE2" firstAttribute="leading" secondItem="lat-um-c67" secondAttribute="trailing" constant="206.5" id="pN9-5Z-oFx"/>
+                                    <constraint firstItem="lat-um-c67" firstAttribute="leading" secondItem="uRw-cC-rNr" secondAttribute="trailing" constant="206.5" id="sOQ-oF-Mxw"/>
+                                    <constraint firstItem="uRw-cC-rNr" firstAttribute="centerY" secondItem="7Bv-ga-dgt" secondAttribute="centerY" id="wyP-Du-wz3"/>
+                                    <constraint firstItem="lat-um-c67" firstAttribute="centerY" secondItem="7Bv-ga-dgt" secondAttribute="centerY" id="zRm-nC-JV4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBK-Qj-m27">
                                 <rect key="frame" x="20" y="0.0" width="80" height="1060"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SsO-Ui-bPT">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SsO-Ui-bPT">
                                         <rect key="frame" x="0.0" y="79" width="80" height="981"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="separatorColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="SsO-Ui-bPT" secondAttribute="bottom" id="HqU-0C-vF2"/>
                                     <constraint firstAttribute="width" constant="80" id="Vtc-9y-6sF"/>
@@ -61,13 +89,12 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9P-mp-WgM">
                                         <rect key="frame" x="0.0" y="0.0" width="700" height="837"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="837" id="aCN-cJ-a0H"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="N9P-mp-WgM" firstAttribute="trailing" secondItem="OMv-oe-ZzI" secondAttribute="trailing" id="3iw-fY-YMM"/>
                                     <constraint firstItem="N9P-mp-WgM" firstAttribute="bottom" secondItem="OMv-oe-ZzI" secondAttribute="bottom" id="Ghg-vk-4hC"/>
@@ -137,7 +164,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="AddPageButton" destination="cxo-jl-1BQ" id="Rt5-lF-P9J"/>
-                        <outlet property="CloseButton" destination="gxK-tS-Q1N" id="IWf-8n-4gO"/>
                         <outlet property="ContentView" destination="N9P-mp-WgM" id="5S5-fe-Wpa"/>
                         <outlet property="ContentViewHeight" destination="aCN-cJ-a0H" id="EnV-66-ic0"/>
                         <outlet property="MemberTable" destination="SsO-Ui-bPT" id="n0F-eq-ZjX"/>
@@ -145,6 +171,9 @@
                         <outlet property="MenuView" destination="7Bv-ga-dgt" id="lai-Qn-O4Q"/>
                         <outlet property="ScrollView" destination="CnF-hT-hI1" id="hKZ-sz-sSd"/>
                         <outlet property="ToolBer" destination="uJl-Vj-X6R" id="ttv-MY-QQy"/>
+                        <outlet property="homeButton" destination="uRw-cC-rNr" id="Uw7-D1-aAq"/>
+                        <outlet property="noteButton" destination="lat-um-c67" id="95c-Vz-aVG"/>
+                        <outlet property="settingButton" destination="9Q4-Xp-AE2" id="aj4-9Y-P4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wd-PE-f1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -156,17 +185,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

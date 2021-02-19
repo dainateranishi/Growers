@@ -9,8 +9,7 @@ import UIKit
 
 class MemberCellTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var MemberFrame: UIImageView!
-    @IBOutlet weak var Membername: UILabel!
+    @IBOutlet weak var usericon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +23,7 @@ class MemberCellTableViewCell: UITableViewCell {
     }
     
     func setup(mem: Member){
-        Membername.text = mem.name as String
+//        Membername.text = mem.name as String
     }
 
 }

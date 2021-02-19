@@ -15,9 +15,7 @@
 		1746527325DFE9700017D478 /* Canvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1746524E25DFE9700017D478 /* Canvas.xib */; };
 		1746527425DFE9700017D478 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746524F25DFE9700017D478 /* Canvas.swift */; };
 		1746527525DFE9700017D478 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746525125DFE9700017D478 /* home.storyboard */; };
-		1746527625DFE9700017D478 /* Canvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746525225DFE9700017D478 /* Canvas.storyboard */; };
 		1746527725DFE9700017D478 /* StudyRoomViewScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525425DFE9700017D478 /* StudyRoomViewScroll.swift */; };
-		1746527825DFE9700017D478 /* studyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746525525DFE9700017D478 /* studyRoom.storyboard */; };
 		1746527A25DFE9700017D478 /* ShareWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746525825DFE9700017D478 /* ShareWindow.storyboard */; };
 		1746527B25DFE9700017D478 /* ShareWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525925DFE9700017D478 /* ShareWindowController.swift */; };
 		1746527C25DFE9700017D478 /* MemberFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 1746525B25DFE9700017D478 /* MemberFrame.png */; };
@@ -37,6 +35,14 @@
 		1746528C25DFE9700017D478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746527125DFE9700017D478 /* AppDelegate.swift */; };
 		1746528D25DFE9700017D478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746527225DFE9700017D478 /* SceneDelegate.swift */; };
 		174652C125DFEC5A0017D478 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 174652C025DFEC5A0017D478 /* GoogleService-Info.plist */; };
+		174652CC25DFFEF30017D478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174652CB25DFFEF30017D478 /* HomeViewController.swift */; };
+		174652DF25E000320017D478 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174652DD25E000320017D478 /* PostView.swift */; };
+		174652E025E000320017D478 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174652DE25E000320017D478 /* PostView.xib */; };
+		174652F225E02BF60017D478 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174652F125E02BF60017D478 /* Study.storyboard */; };
+		174652F725E030400017D478 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174652F625E030400017D478 /* StudyViewController.swift */; };
+		1746530525E0354B0017D478 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746530425E0354B0017D478 /* AnswerViewController.swift */; };
+		1746531025E0384C0017D478 /* commentViewConttroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746530F25E0384C0017D478 /* commentViewConttroller.swift */; };
+		1746532625E03DB20017D478 /* AddNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746532525E03DB20017D478 /* AddNoteController.swift */; };
 		2AFED793FA7615CDCC1AF76B /* Pods_Growers_GrowersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB5BEDD7DF802E06F4FB3F0 /* Pods_Growers_GrowersUITests.framework */; };
 		4C5DD402409C6BE9B6893688 /* Pods_Growers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023D77699D0EC5927E07CFD /* Pods_Growers.framework */; };
 		D7B84E92A78E24E0846B9D98 /* Pods_GrowersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805BBC2019BA6283C04FC2B4 /* Pods_GrowersTests.framework */; };
@@ -74,9 +80,7 @@
 		1746524E25DFE9700017D478 /* Canvas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Canvas.xib; sourceTree = "<group>"; };
 		1746524F25DFE9700017D478 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		1746525125DFE9700017D478 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
-		1746525225DFE9700017D478 /* Canvas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Canvas.storyboard; sourceTree = "<group>"; };
 		1746525425DFE9700017D478 /* StudyRoomViewScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyRoomViewScroll.swift; sourceTree = "<group>"; };
-		1746525525DFE9700017D478 /* studyRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = studyRoom.storyboard; sourceTree = "<group>"; };
 		1746525825DFE9700017D478 /* ShareWindow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareWindow.storyboard; sourceTree = "<group>"; };
 		1746525925DFE9700017D478 /* ShareWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareWindowController.swift; sourceTree = "<group>"; };
 		1746525B25DFE9700017D478 /* MemberFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemberFrame.png; sourceTree = "<group>"; };
@@ -96,6 +100,14 @@
 		1746527125DFE9700017D478 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1746527225DFE9700017D478 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		174652C025DFEC5A0017D478 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		174652CB25DFFEF30017D478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		174652DD25E000320017D478 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		174652DE25E000320017D478 /* PostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
+		174652F125E02BF60017D478 /* Study.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
+		174652F625E030400017D478 /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
+		1746530425E0354B0017D478 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		1746530F25E0384C0017D478 /* commentViewConttroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentViewConttroller.swift; sourceTree = "<group>"; };
+		1746532525E03DB20017D478 /* AddNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteController.swift; sourceTree = "<group>"; };
 		30C582DEB94844FFAA0F6A98 /* Pods-GrowersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowersTests.release.xcconfig"; path = "Target Support Files/Pods-GrowersTests/Pods-GrowersTests.release.xcconfig"; sourceTree = "<group>"; };
 		3686A26A9D77E7ACFF9E19FF /* Pods-Growers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growers.debug.xcconfig"; path = "Target Support Files/Pods-Growers/Pods-Growers.debug.xcconfig"; sourceTree = "<group>"; };
 		7E890C01A60B1B78EF6BB069 /* Pods-Growers-GrowersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growers-GrowersUITests.release.xcconfig"; path = "Target Support Files/Pods-Growers-GrowersUITests/Pods-Growers-GrowersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,14 +215,9 @@
 		1746524C25DFE9700017D478 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1746524D25DFE9700017D478 /* Note */,
 				1746525025DFE9700017D478 /* Home */,
-				1746525225DFE9700017D478 /* Canvas.storyboard */,
-				1746525325DFE9700017D478 /* StudyRoom */,
-				1746525625DFE9700017D478 /* ShareWindow */,
-				1746525A25DFE9700017D478 /* MemberView */,
+				1746525325DFE9700017D478 /* Study */,
 				1746525F25DFE9700017D478 /* main */,
-				1746526425DFE9700017D478 /* Tool */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -227,18 +234,28 @@
 		1746525025DFE9700017D478 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1746532125E03C220017D478 /* Post */,
+				1746530925E036E90017D478 /* comment */,
+				174652FE25E031490017D478 /* Answer */,
 				1746525125DFE9700017D478 /* home.storyboard */,
+				174652CB25DFFEF30017D478 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		1746525325DFE9700017D478 /* StudyRoom */ = {
+		1746525325DFE9700017D478 /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				1746525425DFE9700017D478 /* StudyRoomViewScroll.swift */,
-				1746525525DFE9700017D478 /* studyRoom.storyboard */,
+				1746531425E039F30017D478 /* AddNote */,
+				174652F025E02BC80017D478 /* StudyRoom */,
+				1746524D25DFE9700017D478 /* Note */,
+				1746526425DFE9700017D478 /* Tool */,
+				1746525A25DFE9700017D478 /* MemberView */,
+				1746525625DFE9700017D478 /* ShareWindow */,
+				174652F125E02BF60017D478 /* Study.storyboard */,
+				174652F625E030400017D478 /* StudyViewController.swift */,
 			);
-			path = StudyRoom;
+			path = Study;
 			sourceTree = "<group>";
 		};
 		1746525625DFE9700017D478 /* ShareWindow */ = {
@@ -305,6 +322,47 @@
 				1746526E25DFE9700017D478 /* UIView+Util.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		174652F025E02BC80017D478 /* StudyRoom */ = {
+			isa = PBXGroup;
+			children = (
+				1746525425DFE9700017D478 /* StudyRoomViewScroll.swift */,
+			);
+			path = StudyRoom;
+			sourceTree = "<group>";
+		};
+		174652FE25E031490017D478 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				1746530425E0354B0017D478 /* AnswerViewController.swift */,
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
+		1746530925E036E90017D478 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				1746530F25E0384C0017D478 /* commentViewConttroller.swift */,
+			);
+			path = comment;
+			sourceTree = "<group>";
+		};
+		1746531425E039F30017D478 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				1746532525E03DB20017D478 /* AddNoteController.swift */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		1746532125E03C220017D478 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				174652DD25E000320017D478 /* PostView.swift */,
+				174652DE25E000320017D478 /* PostView.xib */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		C5497CA1AED08E89F59EAAC1 /* Frameworks */ = {
@@ -445,9 +503,9 @@
 				1746528225DFE9700017D478 /* Main.storyboard in Resources */,
 				174651D625DFE6180017D478 /* Assets.xcassets in Resources */,
 				1746527C25DFE9700017D478 /* MemberFrame.png in Resources */,
-				1746527825DFE9700017D478 /* studyRoom.storyboard in Resources */,
 				1746527A25DFE9700017D478 /* ShareWindow.storyboard in Resources */,
-				1746527625DFE9700017D478 /* Canvas.storyboard in Resources */,
+				174652F225E02BF60017D478 /* Study.storyboard in Resources */,
+				174652E025E000320017D478 /* PostView.xib in Resources */,
 				1746528425DFE9700017D478 /* PencilCaseView.xib in Resources */,
 				1746527325DFE9700017D478 /* Canvas.xib in Resources */,
 			);
@@ -583,15 +641,21 @@
 				1746527725DFE9700017D478 /* StudyRoomViewScroll.swift in Sources */,
 				1746528625DFE9700017D478 /* TapAreaExpandButton.swift in Sources */,
 				1746528A25DFE9700017D478 /* Util.swift in Sources */,
+				174652CC25DFFEF30017D478 /* HomeViewController.swift in Sources */,
 				1746527F25DFE9700017D478 /* MemberCellTableViewCell.swift in Sources */,
 				174651CF25DFE6150017D478 /* SceneDelegate.swift in Sources */,
+				1746531025E0384C0017D478 /* commentViewConttroller.swift in Sources */,
 				1746527425DFE9700017D478 /* Canvas.swift in Sources */,
+				174652F725E030400017D478 /* StudyViewController.swift in Sources */,
 				1746528325DFE9700017D478 /* PencilCaseView.swift in Sources */,
+				1746530525E0354B0017D478 /* AnswerViewController.swift in Sources */,
 				1746528825DFE9700017D478 /* UIImage+Util.swift in Sources */,
 				1746528D25DFE9700017D478 /* SceneDelegate.swift in Sources */,
 				1746528025DFE9700017D478 /* SignUpViewController.swift in Sources */,
+				1746532625E03DB20017D478 /* AddNoteController.swift in Sources */,
 				1746527E25DFE9700017D478 /* Member.swift in Sources */,
 				1746528925DFE9700017D478 /* UIView+Util.swift in Sources */,
+				174652DF25E000320017D478 /* PostView.swift in Sources */,
 				1746527B25DFE9700017D478 /* ShareWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
