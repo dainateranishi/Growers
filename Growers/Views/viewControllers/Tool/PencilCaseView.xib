@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PencilCaseView" customModule="Note" customModuleProvider="target">
+            <connections>
+                <outlet property="inkBlack" destination="Uy5-w4-Nud" id="qZZ-RO-8dO"/>
+                <outlet property="inkBlue" destination="AM8-IT-IfS" id="hGN-TH-eeA"/>
+                <outlet property="inkBrown" destination="YdX-DU-zbY" id="AY7-Ry-zYb"/>
+                <outlet property="inkErase" destination="nZ3-JT-etO" id="d2r-eR-Wrf"/>
+                <outlet property="inkGreen" destination="CDO-9f-aJJ" id="qwA-2H-csD"/>
+                <outlet property="inkOrange" destination="HlK-lN-EXq" id="O8p-Ed-mGK"/>
+                <outlet property="inkPurple" destination="387-dV-ORq" id="1nS-wo-zes"/>
+                <outlet property="inkRed" destination="zhp-De-Bp1" id="Yt5-2r-qXh"/>
+                <outlet property="inkYellow" destination="Qu9-bQ-v8F" id="pkZ-eI-a4k"/>
+                <outlet property="marker" destination="Mp0-F9-pBb" id="U9D-aM-wqr"/>
+                <outlet property="pencil" destination="sBy-OP-ldj" id="IMK-Fa-Nlp"/>
+                <outlet property="ruler" destination="lc8-Gf-VXM" id="S81-Id-nAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ej-kt-621">
+            <rect key="frame" x="0.0" y="0.0" width="648" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="387-dV-ORq">
+                    <rect key="frame" x="309" y="24" width="30" height="31"/>
+                    <state key="normal" title="紫"/>
+                    <connections>
+                        <action selector="tapPurple:" destination="-1" eventType="touchUpInside" id="g0K-bL-Sou"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdX-DU-zbY">
+                    <rect key="frame" x="347" y="24" width="30" height="30"/>
+                    <state key="normal" title="茶"/>
+                    <connections>
+                        <action selector="tapBrown:" destination="-1" eventType="touchUpInside" id="onW-0U-F3H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu9-bQ-v8F">
+                    <rect key="frame" x="385" y="24" width="30" height="30"/>
+                    <state key="normal" title="黄"/>
+                    <connections>
+                        <action selector="tapYellow:" destination="-1" eventType="touchUpInside" id="UPB-n0-1ge"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlK-lN-EXq">
+                    <rect key="frame" x="271" y="24" width="30" height="30"/>
+                    <state key="normal" title="橙"/>
+                    <connections>
+                        <action selector="tapOrange:" destination="-1" eventType="touchUpInside" id="qJH-Ju-8Kg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-9f-aJJ">
+                    <rect key="frame" x="233" y="24" width="30" height="30"/>
+                    <state key="normal" title="緑"/>
+                    <connections>
+                        <action selector="tapGreen:" destination="-1" eventType="touchUpInside" id="JT7-pL-4oY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM8-IT-IfS">
+                    <rect key="frame" x="195" y="24" width="30" height="30"/>
+                    <state key="normal" title="青"/>
+                    <connections>
+                        <action selector="tapBlue:" destination="-1" eventType="touchUpInside" id="f29-uk-ozS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-De-Bp1">
+                    <rect key="frame" x="157" y="24" width="30" height="30"/>
+                    <state key="normal" title="赤"/>
+                    <connections>
+                        <action selector="tapRed:" destination="-1" eventType="touchUpInside" id="SVX-zx-PpE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy5-w4-Nud">
+                    <rect key="frame" x="119" y="24" width="30" height="30"/>
+                    <state key="normal" title="黒"/>
+                    <connections>
+                        <action selector="tapBlack:" destination="-1" eventType="touchUpInside" id="Mwh-4K-def"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ3-JT-etO">
+                    <rect key="frame" x="423" y="24" width="30" height="30"/>
+                    <state key="normal" title="消"/>
+                    <connections>
+                        <action selector="tapErase:" destination="-1" eventType="touchUpInside" id="u0K-pP-ijw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBy-OP-ldj">
+                    <rect key="frame" x="461" y="24" width="31" height="30"/>
+                    <state key="normal" title="ペン"/>
+                    <connections>
+                        <action selector="tapPencil:" destination="-1" eventType="touchUpInside" id="SDb-5Z-lgX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-F9-pBb">
+                    <rect key="frame" x="500" y="24" width="30" height="30"/>
+                    <state key="normal" title="マ"/>
+                    <connections>
+                        <action selector="tapMarker:" destination="-1" eventType="touchUpInside" id="Rmf-vc-OJz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc8-Gf-VXM">
+                    <rect key="frame" x="538" y="24" width="31" height="30"/>
+                    <state key="normal" title="定規"/>
+                    <connections>
+                        <action selector="tapRuler:" destination="-1" eventType="touchUpInside" id="dJ5-uu-iN0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PlY-Mu-N0z"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qu9-bQ-v8F" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="8Hx-2e-1KZ"/>
+                <constraint firstItem="Qu9-bQ-v8F" firstAttribute="leading" secondItem="YdX-DU-zbY" secondAttribute="trailing" constant="8" symbolic="YES" id="8dC-V8-P8S"/>
+                <constraint firstItem="Mp0-F9-pBb" firstAttribute="leading" secondItem="sBy-OP-ldj" secondAttribute="trailing" constant="8" symbolic="YES" id="Ahj-Nr-P8k"/>
+                <constraint firstItem="sBy-OP-ldj" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="GUM-yq-2K2"/>
+                <constraint firstItem="CDO-9f-aJJ" firstAttribute="leading" secondItem="AM8-IT-IfS" secondAttribute="trailing" constant="8" symbolic="YES" id="JsN-A8-Mx8"/>
+                <constraint firstItem="HlK-lN-EXq" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="LVJ-0m-zdg"/>
+                <constraint firstItem="zhp-De-Bp1" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Pxm-eQ-l3o"/>
+                <constraint firstItem="nZ3-JT-etO" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Szt-JX-7Qw"/>
+                <constraint firstItem="387-dV-ORq" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Ty8-A6-lMx"/>
+                <constraint firstItem="CDO-9f-aJJ" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="XND-VI-A8E"/>
+                <constraint firstItem="HlK-lN-EXq" firstAttribute="leading" secondItem="CDO-9f-aJJ" secondAttribute="trailing" constant="8" symbolic="YES" id="YL7-WP-mG3"/>
+                <constraint firstItem="zhp-De-Bp1" firstAttribute="leading" secondItem="Uy5-w4-Nud" secondAttribute="trailing" constant="8" symbolic="YES" id="YwF-g7-CEE"/>
+                <constraint firstItem="AM8-IT-IfS" firstAttribute="leading" secondItem="zhp-De-Bp1" secondAttribute="trailing" constant="8" symbolic="YES" id="ZIu-cp-43k"/>
+                <constraint firstItem="Uy5-w4-Nud" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="ZkH-Fy-7Bg"/>
+                <constraint firstItem="lc8-Gf-VXM" firstAttribute="leading" secondItem="Mp0-F9-pBb" secondAttribute="trailing" constant="8" symbolic="YES" id="a8C-C7-8Od"/>
+                <constraint firstItem="AM8-IT-IfS" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="bv7-Wd-ZuS"/>
+                <constraint firstItem="387-dV-ORq" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="fcI-Rd-jky"/>
+                <constraint firstItem="YdX-DU-zbY" firstAttribute="leading" secondItem="387-dV-ORq" secondAttribute="trailing" constant="8" symbolic="YES" id="jdh-zX-a51"/>
+                <constraint firstItem="sBy-OP-ldj" firstAttribute="leading" secondItem="nZ3-JT-etO" secondAttribute="trailing" constant="8" symbolic="YES" id="l3Q-QV-ePJ"/>
+                <constraint firstItem="387-dV-ORq" firstAttribute="leading" secondItem="HlK-lN-EXq" secondAttribute="trailing" constant="8" symbolic="YES" id="o34-My-g2p"/>
+                <constraint firstItem="Mp0-F9-pBb" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="qRg-hK-cOs"/>
+                <constraint firstItem="nZ3-JT-etO" firstAttribute="leading" secondItem="Qu9-bQ-v8F" secondAttribute="trailing" constant="8" symbolic="YES" id="qtM-Og-JhE"/>
+                <constraint firstItem="387-dV-ORq" firstAttribute="centerX" secondItem="8ej-kt-621" secondAttribute="centerX" id="x2u-Cq-2ci"/>
+                <constraint firstItem="YdX-DU-zbY" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="xeE-oL-BcU"/>
+                <constraint firstItem="lc8-Gf-VXM" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="y44-aI-8Z1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="108.69565217391305" y="-332.47767857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
