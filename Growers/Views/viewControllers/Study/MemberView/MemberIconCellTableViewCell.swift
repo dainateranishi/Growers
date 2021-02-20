@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MemberCellTableViewCell: UITableViewCell {
+class MemberIconCellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var usericon: UIImageView!
     

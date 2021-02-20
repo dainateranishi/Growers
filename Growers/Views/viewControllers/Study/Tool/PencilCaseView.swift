@@ -14,7 +14,6 @@ class PencilCaseView: UIView {
         case green
         case orange
         case purple
-        case brown
         case yellow
     }
  
@@ -24,19 +23,16 @@ class PencilCaseView: UIView {
     var onMarker = false
     var onErase = false
  
-    @IBOutlet weak var inkBlack: UIButton!
-    @IBOutlet weak var inkRed: UIButton!
-    @IBOutlet weak var inkBlue: UIButton!
-    @IBOutlet weak var inkGreen: UIButton!
-    @IBOutlet weak var inkOrange: UIButton!
-    @IBOutlet weak var inkPurple: UIButton!
-    @IBOutlet weak var inkBrown: UIButton!
-    @IBOutlet weak var inkYellow: UIButton!
-    @IBOutlet weak var inkErase: UIButton!
-    @IBOutlet weak var pencil: UIButton!
-    @IBOutlet weak var marker: UIButton!
-    @IBOutlet weak var ruler: UIButton!
-     
+
+    @IBOutlet weak var inkBlack: UIImageView!
+    @IBOutlet weak var inkRed: UIImageView!
+    @IBOutlet weak var inkOrange: UIImageView!
+    @IBOutlet weak var inkGreen: UIImageView!
+    @IBOutlet weak var inkYellow: UIImageView!
+    @IBOutlet weak var inkPurple: UIImageView!
+    @IBOutlet weak var inkBlue: UIImageView!
+    @IBOutlet weak var Eraser: UIImageView!
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         loadNib()
@@ -74,9 +70,8 @@ class PencilCaseView: UIView {
         self.inkGreen.backgroundColor = .clear
         self.inkOrange.backgroundColor = .clear
         self.inkPurple.backgroundColor = .clear
-        self.inkBrown.backgroundColor = .clear
         self.inkYellow.backgroundColor = .clear
-        self.inkErase.backgroundColor = .clear
+        self.Eraser.backgroundColor = .clear
         switch ink {
         case .black:
             self.inkBlack.backgroundColor = .systemGray5
@@ -90,8 +85,6 @@ class PencilCaseView: UIView {
             self.inkOrange.backgroundColor = .systemGray5
         case .purple:
             self.inkPurple.backgroundColor = .systemGray5
-        case .brown:
-            self.inkBrown.backgroundColor = .systemGray5
         case .yellow:
             self.inkYellow.backgroundColor = .systemGray5
         }
@@ -133,11 +126,6 @@ class PencilCaseView: UIView {
         self.updateInk(ink: .purple)
     }
      
-    @IBAction func tapBrown(_ sender: Any) {
-        self.onErase = false
-        self.inkBackground(ink: .brown)
-        self.updateInk(ink: .brown)
-    }
      
     @IBAction func tapYellow(_ sender: Any) {
         self.onErase = false
@@ -148,43 +136,41 @@ class PencilCaseView: UIView {
     @IBAction func tapErase(_ sender: Any) {
         self.onErase.toggle()
         let color: UIColor = self.onErase ? .blue : .black
-        self.inkErase.tintColor = color
+        self.Eraser.tintColor = color
         self.updateInk()
     }
  
-    @IBAction func tapPencil(_ sender: Any) {
-        self.onErase = false
-        self.onPencil.toggle()
-        if self.onMarker == true {
-            self.onMarker = false
-            self.marker.tintColor = .black
-        }
-        let color: UIColor = self.onPencil ? .blue : .black
-        self.pencil.tintColor = color
-        self.updateInk()
-    }
+//    @IBAction func tapPencil(_ sender: Any) {
+//        self.onErase = false
+//        self.onPencil.toggle()
+//        if self.onMarker == true {
+//            self.onMarker = false
+//            self.marker.tintColor = .black
+//        }
+//        let color: UIColor = self.onPencil ? .blue : .black
+//        self.pencil.tintColor = color
+//        self.updateInk()
+//    }
+//
+//    @IBAction func tapMarker(_ sender: Any) {
+//        self.onMarker.toggle()
+//        self.onErase = false
+//        if self.onPencil == true {
+//            self.onPencil = false
+//            self.pencil.tintColor = .black
+//        }
+//        let color: UIColor = self.onMarker ? .blue : .black
+//        self.marker.tintColor = color
+//        self.updateInk()
+//    }
      
-    @IBAction func tapMarker(_ sender: Any) {
-        self.onMarker.toggle()
-        self.onErase = false
-        if self.onPencil == true {
-            self.onPencil = false
-            self.pencil.tintColor = .black
-        }
-        let color: UIColor = self.onMarker ? .blue : .black
-        self.marker.tintColor = color
-        self.updateInk()
-    }
-     
-    @IBAction func tapRuler(_ sender: Any) {
-        self.CanvasViews.forEach({canvas in
-            canvas.isRulerActive.toggle()
-//            let color: UIColor = canvas.isRulerActive ? .blue : .black
-        })
-//        self.pKCanvasView?.isRulerActive.toggle()
-        let color: UIColor = self.CanvasViews.first!.isRulerActive ? .blue : .black
-        self.ruler.tintColor = color
-    }
+//    @IBAction func tapRuler(_ sender: Any) {
+//        self.CanvasViews.forEach({canvas in
+//            canvas.isRulerActive.toggle()
+//        })
+//        let color: UIColor = self.CanvasViews.first!.isRulerActive ? .blue : .black
+////        self.ruler.tintColor = color
+//    }
      
     func updateInk(ink: Ink? = nil) {
         if let ink = ink {
@@ -229,8 +215,6 @@ class PencilCaseView: UIView {
             result = .orange
         case .purple:
             result = .purple
-        case .brown:
-            result = .brown
         case .yellow:
             result = .yellow
        }
@@ -242,7 +226,7 @@ extension PencilCaseView: UIPencilInteractionDelegate {
     func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
         self.onErase.toggle()
         let color: UIColor = self.onErase ? .blue : .black
-        self.inkErase.tintColor = color
+        self.Eraser.tintColor = color
         self.updateInk()
     }
 }

@@ -19,9 +19,9 @@
 		1746527A25DFE9700017D478 /* ShareWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746525825DFE9700017D478 /* ShareWindow.storyboard */; };
 		1746527B25DFE9700017D478 /* ShareWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525925DFE9700017D478 /* ShareWindowController.swift */; };
 		1746527C25DFE9700017D478 /* MemberFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 1746525B25DFE9700017D478 /* MemberFrame.png */; };
-		1746527D25DFE9700017D478 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1746525C25DFE9700017D478 /* MemberCell.xib */; };
+		1746527D25DFE9700017D478 /* MemberIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1746525C25DFE9700017D478 /* MemberIconCell.xib */; };
 		1746527E25DFE9700017D478 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525D25DFE9700017D478 /* Member.swift */; };
-		1746527F25DFE9700017D478 /* MemberCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525E25DFE9700017D478 /* MemberCellTableViewCell.swift */; };
+		1746527F25DFE9700017D478 /* MemberIconCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746525E25DFE9700017D478 /* MemberIconCellTableViewCell.swift */; };
 		1746528025DFE9700017D478 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746526025DFE9700017D478 /* SignUpViewController.swift */; };
 		1746528125DFE9700017D478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746526125DFE9700017D478 /* ViewController.swift */; };
 		1746528225DFE9700017D478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1746526225DFE9700017D478 /* Main.storyboard */; };
@@ -43,6 +43,21 @@
 		1746530525E0354B0017D478 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746530425E0354B0017D478 /* AnswerViewController.swift */; };
 		1746531025E0384C0017D478 /* commentViewConttroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746530F25E0384C0017D478 /* commentViewConttroller.swift */; };
 		1746532625E03DB20017D478 /* AddNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746532525E03DB20017D478 /* AddNoteController.swift */; };
+		17D181A325E17DDE0088A8B4 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D181A125E17DDE0088A8B4 /* MemberCell.swift */; };
+		17D181A425E17DDE0088A8B4 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D181A225E17DDE0088A8B4 /* MemberCell.xib */; };
+		17D181A925E17F090088A8B4 /* inviteMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D181A825E17F090088A8B4 /* inviteMemberViewController.swift */; };
+		17D181AF25E180D50088A8B4 /* PostQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D181AE25E180D50088A8B4 /* PostQuestion.swift */; };
+		17D181B525E183480088A8B4 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D181B425E183480088A8B4 /* Setting.storyboard */; };
+		17D181BA25E184C60088A8B4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D181B925E184C60088A8B4 /* SettingViewController.swift */; };
+		17D181C825E186E60088A8B4 /* orangepen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181BF25E186E40088A8B4 /* orangepen.png */; };
+		17D181C925E186E60088A8B4 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C025E186E50088A8B4 /* eraser.png */; };
+		17D181CA25E186E60088A8B4 /* greanpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C125E186E50088A8B4 /* greanpen.png */; };
+		17D181CB25E186E60088A8B4 /* bluepen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C225E186E50088A8B4 /* bluepen.png */; };
+		17D181CC25E186E60088A8B4 /* redpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C325E186E50088A8B4 /* redpen.png */; };
+		17D181CD25E186E60088A8B4 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C425E186E50088A8B4 /* add.png */; };
+		17D181CE25E186E60088A8B4 /* purplepen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C525E186E60088A8B4 /* purplepen.png */; };
+		17D181CF25E186E60088A8B4 /* bluckpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C625E186E60088A8B4 /* bluckpen.png */; };
+		17D181D025E186E60088A8B4 /* yellowpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 17D181C725E186E60088A8B4 /* yellowpen.png */; };
 		2AFED793FA7615CDCC1AF76B /* Pods_Growers_GrowersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB5BEDD7DF802E06F4FB3F0 /* Pods_Growers_GrowersUITests.framework */; };
 		4C5DD402409C6BE9B6893688 /* Pods_Growers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F023D77699D0EC5927E07CFD /* Pods_Growers.framework */; };
 		D7B84E92A78E24E0846B9D98 /* Pods_GrowersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805BBC2019BA6283C04FC2B4 /* Pods_GrowersTests.framework */; };
@@ -84,9 +99,9 @@
 		1746525825DFE9700017D478 /* ShareWindow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareWindow.storyboard; sourceTree = "<group>"; };
 		1746525925DFE9700017D478 /* ShareWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareWindowController.swift; sourceTree = "<group>"; };
 		1746525B25DFE9700017D478 /* MemberFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemberFrame.png; sourceTree = "<group>"; };
-		1746525C25DFE9700017D478 /* MemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		1746525C25DFE9700017D478 /* MemberIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberIconCell.xib; sourceTree = "<group>"; };
 		1746525D25DFE9700017D478 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		1746525E25DFE9700017D478 /* MemberCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberCellTableViewCell.swift; sourceTree = "<group>"; };
+		1746525E25DFE9700017D478 /* MemberIconCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberIconCellTableViewCell.swift; sourceTree = "<group>"; };
 		1746526025DFE9700017D478 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1746526125DFE9700017D478 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1746526325DFE9700017D478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +123,21 @@
 		1746530425E0354B0017D478 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		1746530F25E0384C0017D478 /* commentViewConttroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentViewConttroller.swift; sourceTree = "<group>"; };
 		1746532525E03DB20017D478 /* AddNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteController.swift; sourceTree = "<group>"; };
+		17D181A125E17DDE0088A8B4 /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemberCell.swift; path = Growers/Views/viewControllers/Study/Tool/MemberCell.swift; sourceTree = SOURCE_ROOT; };
+		17D181A225E17DDE0088A8B4 /* MemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemberCell.xib; path = Growers/Views/viewControllers/Study/Tool/MemberCell.xib; sourceTree = SOURCE_ROOT; };
+		17D181A825E17F090088A8B4 /* inviteMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inviteMemberViewController.swift; sourceTree = "<group>"; };
+		17D181AE25E180D50088A8B4 /* PostQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestion.swift; sourceTree = "<group>"; };
+		17D181B425E183480088A8B4 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		17D181B925E184C60088A8B4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		17D181BF25E186E40088A8B4 /* orangepen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangepen.png; sourceTree = "<group>"; };
+		17D181C025E186E50088A8B4 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		17D181C125E186E50088A8B4 /* greanpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greanpen.png; sourceTree = "<group>"; };
+		17D181C225E186E50088A8B4 /* bluepen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluepen.png; sourceTree = "<group>"; };
+		17D181C325E186E50088A8B4 /* redpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpen.png; sourceTree = "<group>"; };
+		17D181C425E186E50088A8B4 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		17D181C525E186E60088A8B4 /* purplepen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplepen.png; sourceTree = "<group>"; };
+		17D181C625E186E60088A8B4 /* bluckpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluckpen.png; sourceTree = "<group>"; };
+		17D181C725E186E60088A8B4 /* yellowpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowpen.png; sourceTree = "<group>"; };
 		30C582DEB94844FFAA0F6A98 /* Pods-GrowersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowersTests.release.xcconfig"; path = "Target Support Files/Pods-GrowersTests/Pods-GrowersTests.release.xcconfig"; sourceTree = "<group>"; };
 		3686A26A9D77E7ACFF9E19FF /* Pods-Growers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growers.debug.xcconfig"; path = "Target Support Files/Pods-Growers/Pods-Growers.debug.xcconfig"; sourceTree = "<group>"; };
 		7E890C01A60B1B78EF6BB069 /* Pods-Growers-GrowersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Growers-GrowersUITests.release.xcconfig"; path = "Target Support Files/Pods-Growers-GrowersUITests/Pods-Growers-GrowersUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +245,7 @@
 		1746524C25DFE9700017D478 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17D181B325E183380088A8B4 /* setting */,
 				1746525025DFE9700017D478 /* Home */,
 				1746525325DFE9700017D478 /* Study */,
 				1746525F25DFE9700017D478 /* main */,
@@ -246,6 +277,8 @@
 		1746525325DFE9700017D478 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				17D181AD25E180BB0088A8B4 /* PostQuestion */,
+				17D1819A25E17ACC0088A8B4 /* InviteMember */,
 				1746531425E039F30017D478 /* AddNote */,
 				174652F025E02BC80017D478 /* StudyRoom */,
 				1746524D25DFE9700017D478 /* Note */,
@@ -270,10 +303,12 @@
 		1746525A25DFE9700017D478 /* MemberView */ = {
 			isa = PBXGroup;
 			children = (
+				17D181A125E17DDE0088A8B4 /* MemberCell.swift */,
+				17D181A225E17DDE0088A8B4 /* MemberCell.xib */,
 				1746525B25DFE9700017D478 /* MemberFrame.png */,
-				1746525C25DFE9700017D478 /* MemberCell.xib */,
+				1746525C25DFE9700017D478 /* MemberIconCell.xib */,
 				1746525D25DFE9700017D478 /* Member.swift */,
-				1746525E25DFE9700017D478 /* MemberCellTableViewCell.swift */,
+				1746525E25DFE9700017D478 /* MemberIconCellTableViewCell.swift */,
 			);
 			path = MemberView;
 			sourceTree = "<group>";
@@ -291,6 +326,7 @@
 		1746526425DFE9700017D478 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				17D181BE25E186CE0088A8B4 /* images */,
 				1746526525DFE9700017D478 /* PencilCaseView.swift */,
 				1746526625DFE9700017D478 /* PencilCaseView.xib */,
 			);
@@ -363,6 +399,47 @@
 				174652DE25E000320017D478 /* PostView.xib */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		17D1819A25E17ACC0088A8B4 /* InviteMember */ = {
+			isa = PBXGroup;
+			children = (
+				17D181A825E17F090088A8B4 /* inviteMemberViewController.swift */,
+			);
+			path = InviteMember;
+			sourceTree = "<group>";
+		};
+		17D181AD25E180BB0088A8B4 /* PostQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				17D181AE25E180D50088A8B4 /* PostQuestion.swift */,
+			);
+			path = PostQuestion;
+			sourceTree = "<group>";
+		};
+		17D181B325E183380088A8B4 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				17D181B425E183480088A8B4 /* Setting.storyboard */,
+				17D181B925E184C60088A8B4 /* SettingViewController.swift */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		17D181BE25E186CE0088A8B4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				17D181C425E186E50088A8B4 /* add.png */,
+				17D181C625E186E60088A8B4 /* bluckpen.png */,
+				17D181C225E186E50088A8B4 /* bluepen.png */,
+				17D181C025E186E50088A8B4 /* eraser.png */,
+				17D181C125E186E50088A8B4 /* greanpen.png */,
+				17D181BF25E186E40088A8B4 /* orangepen.png */,
+				17D181C525E186E60088A8B4 /* purplepen.png */,
+				17D181C325E186E50088A8B4 /* redpen.png */,
+				17D181C725E186E60088A8B4 /* yellowpen.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		C5497CA1AED08E89F59EAAC1 /* Frameworks */ = {
@@ -499,15 +576,26 @@
 				174652C125DFEC5A0017D478 /* GoogleService-Info.plist in Resources */,
 				1746527525DFE9700017D478 /* home.storyboard in Resources */,
 				174651D925DFE6180017D478 /* LaunchScreen.storyboard in Resources */,
-				1746527D25DFE9700017D478 /* MemberCell.xib in Resources */,
+				17D181CD25E186E60088A8B4 /* add.png in Resources */,
+				17D181A425E17DDE0088A8B4 /* MemberCell.xib in Resources */,
+				17D181C825E186E60088A8B4 /* orangepen.png in Resources */,
+				17D181D025E186E60088A8B4 /* yellowpen.png in Resources */,
+				1746527D25DFE9700017D478 /* MemberIconCell.xib in Resources */,
 				1746528225DFE9700017D478 /* Main.storyboard in Resources */,
 				174651D625DFE6180017D478 /* Assets.xcassets in Resources */,
+				17D181CF25E186E60088A8B4 /* bluckpen.png in Resources */,
 				1746527C25DFE9700017D478 /* MemberFrame.png in Resources */,
 				1746527A25DFE9700017D478 /* ShareWindow.storyboard in Resources */,
+				17D181CC25E186E60088A8B4 /* redpen.png in Resources */,
+				17D181B525E183480088A8B4 /* Setting.storyboard in Resources */,
 				174652F225E02BF60017D478 /* Study.storyboard in Resources */,
 				174652E025E000320017D478 /* PostView.xib in Resources */,
 				1746528425DFE9700017D478 /* PencilCaseView.xib in Resources */,
+				17D181CA25E186E60088A8B4 /* greanpen.png in Resources */,
 				1746527325DFE9700017D478 /* Canvas.xib in Resources */,
+				17D181CE25E186E60088A8B4 /* purplepen.png in Resources */,
+				17D181C925E186E60088A8B4 /* eraser.png in Resources */,
+				17D181CB25E186E60088A8B4 /* bluepen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,12 +726,15 @@
 				1746528125DFE9700017D478 /* ViewController.swift in Sources */,
 				1746528C25DFE9700017D478 /* AppDelegate.swift in Sources */,
 				1746528725DFE9700017D478 /* Time.swift in Sources */,
+				17D181BA25E184C60088A8B4 /* SettingViewController.swift in Sources */,
 				1746527725DFE9700017D478 /* StudyRoomViewScroll.swift in Sources */,
 				1746528625DFE9700017D478 /* TapAreaExpandButton.swift in Sources */,
 				1746528A25DFE9700017D478 /* Util.swift in Sources */,
 				174652CC25DFFEF30017D478 /* HomeViewController.swift in Sources */,
-				1746527F25DFE9700017D478 /* MemberCellTableViewCell.swift in Sources */,
+				17D181A325E17DDE0088A8B4 /* MemberCell.swift in Sources */,
+				1746527F25DFE9700017D478 /* MemberIconCellTableViewCell.swift in Sources */,
 				174651CF25DFE6150017D478 /* SceneDelegate.swift in Sources */,
+				17D181A925E17F090088A8B4 /* inviteMemberViewController.swift in Sources */,
 				1746531025E0384C0017D478 /* commentViewConttroller.swift in Sources */,
 				1746527425DFE9700017D478 /* Canvas.swift in Sources */,
 				174652F725E030400017D478 /* StudyViewController.swift in Sources */,
@@ -654,6 +745,7 @@
 				1746528025DFE9700017D478 /* SignUpViewController.swift in Sources */,
 				1746532625E03DB20017D478 /* AddNoteController.swift in Sources */,
 				1746527E25DFE9700017D478 /* Member.swift in Sources */,
+				17D181AF25E180D50088A8B4 /* PostQuestion.swift in Sources */,
 				1746528925DFE9700017D478 /* UIView+Util.swift in Sources */,
 				174652DF25E000320017D478 /* PostView.swift in Sources */,
 				1746527B25DFE9700017D478 /* ShareWindowController.swift in Sources */,

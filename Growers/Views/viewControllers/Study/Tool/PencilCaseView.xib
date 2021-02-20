@@ -8,148 +8,195 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PencilCaseView" customModule="Note" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PencilCaseView" customModule="Growers" customModuleProvider="target">
             <connections>
-                <outlet property="inkBlack" destination="Uy5-w4-Nud" id="qZZ-RO-8dO"/>
-                <outlet property="inkBlue" destination="AM8-IT-IfS" id="hGN-TH-eeA"/>
-                <outlet property="inkBrown" destination="YdX-DU-zbY" id="AY7-Ry-zYb"/>
-                <outlet property="inkErase" destination="nZ3-JT-etO" id="d2r-eR-Wrf"/>
-                <outlet property="inkGreen" destination="CDO-9f-aJJ" id="qwA-2H-csD"/>
-                <outlet property="inkOrange" destination="HlK-lN-EXq" id="O8p-Ed-mGK"/>
-                <outlet property="inkPurple" destination="387-dV-ORq" id="1nS-wo-zes"/>
-                <outlet property="inkRed" destination="zhp-De-Bp1" id="Yt5-2r-qXh"/>
-                <outlet property="inkYellow" destination="Qu9-bQ-v8F" id="pkZ-eI-a4k"/>
-                <outlet property="marker" destination="Mp0-F9-pBb" id="U9D-aM-wqr"/>
-                <outlet property="pencil" destination="sBy-OP-ldj" id="IMK-Fa-Nlp"/>
-                <outlet property="ruler" destination="lc8-Gf-VXM" id="S81-Id-nAu"/>
+                <outlet property="Eraser" destination="e1r-pE-BXp" id="t46-W1-RBs"/>
+                <outlet property="inkBlack" destination="Eri-4k-DZK" id="Kx2-yh-1v1"/>
+                <outlet property="inkBlue" destination="zJJ-DH-8w3" id="bog-ml-rcH"/>
+                <outlet property="inkGreen" destination="g36-5F-Hqz" id="dXg-j1-C6d"/>
+                <outlet property="inkOrange" destination="KdV-pF-JU6" id="ilC-0z-cpg"/>
+                <outlet property="inkPurple" destination="1aj-4m-pQq" id="rMJ-u1-O50"/>
+                <outlet property="inkRed" destination="RhW-d2-gq8" id="8ar-ZD-Mgb"/>
+                <outlet property="inkYellow" destination="aE8-ww-nRE" id="IV3-Ka-th3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="8ej-kt-621">
-            <rect key="frame" x="0.0" y="0.0" width="648" height="79"/>
+            <rect key="frame" x="0.0" y="0.0" width="904" height="79"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="387-dV-ORq">
-                    <rect key="frame" x="309" y="24" width="30" height="31"/>
-                    <state key="normal" title="紫"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluckpen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eri-4k-DZK">
+                    <rect key="frame" x="9" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="toj-lb-RAq"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapPurple:" destination="-1" eventType="touchUpInside" id="g0K-bL-Sou"/>
+                        <outletCollection property="gestureRecognizers" destination="ULf-Cg-Mjm" appends="YES" id="pTL-Bq-81E"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdX-DU-zbY">
-                    <rect key="frame" x="347" y="24" width="30" height="30"/>
-                    <state key="normal" title="茶"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpen.png" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-d2-gq8">
+                    <rect key="frame" x="108" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="EZ7-Wm-2G2"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapBrown:" destination="-1" eventType="touchUpInside" id="onW-0U-F3H"/>
+                        <outletCollection property="gestureRecognizers" destination="gQY-qV-qbl" appends="YES" id="ZjH-Ua-YXZ"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu9-bQ-v8F">
-                    <rect key="frame" x="385" y="24" width="30" height="30"/>
-                    <state key="normal" title="黄"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orangepen.png" translatesAutoresizingMaskIntoConstraints="NO" id="KdV-pF-JU6">
+                    <rect key="frame" x="207" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="uA4-NV-VeD"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapYellow:" destination="-1" eventType="touchUpInside" id="UPB-n0-1ge"/>
+                        <outletCollection property="gestureRecognizers" destination="yWM-WC-SsW" appends="YES" id="WLU-Uf-daZ"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlK-lN-EXq">
-                    <rect key="frame" x="271" y="24" width="30" height="30"/>
-                    <state key="normal" title="橙"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowpen.png" translatesAutoresizingMaskIntoConstraints="NO" id="aE8-ww-nRE">
+                    <rect key="frame" x="306" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="Fzz-VG-IUc"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapOrange:" destination="-1" eventType="touchUpInside" id="qJH-Ju-8Kg"/>
+                        <outletCollection property="gestureRecognizers" destination="nMR-qy-quK" appends="YES" id="LyS-jB-vsC"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-9f-aJJ">
-                    <rect key="frame" x="233" y="24" width="30" height="30"/>
-                    <state key="normal" title="緑"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greanpen.png" translatesAutoresizingMaskIntoConstraints="NO" id="g36-5F-Hqz">
+                    <rect key="frame" x="405" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="cxs-u2-uAb"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapGreen:" destination="-1" eventType="touchUpInside" id="JT7-pL-4oY"/>
+                        <outletCollection property="gestureRecognizers" destination="f1q-mN-He2" appends="YES" id="CLU-wL-LAy"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM8-IT-IfS">
-                    <rect key="frame" x="195" y="24" width="30" height="30"/>
-                    <state key="normal" title="青"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purplepen.png" translatesAutoresizingMaskIntoConstraints="NO" id="1aj-4m-pQq">
+                    <rect key="frame" x="504" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="QaW-Ih-c2U"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapBlue:" destination="-1" eventType="touchUpInside" id="f29-uk-ozS"/>
+                        <outletCollection property="gestureRecognizers" destination="vCm-TB-qnD" appends="YES" id="0Kb-AE-cxh"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhp-De-Bp1">
-                    <rect key="frame" x="157" y="24" width="30" height="30"/>
-                    <state key="normal" title="赤"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eraser.png" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-pE-BXp">
+                    <rect key="frame" x="702" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="grh-kb-Yn0"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapRed:" destination="-1" eventType="touchUpInside" id="SVX-zx-PpE"/>
+                        <outletCollection property="gestureRecognizers" destination="mg9-t3-QSl" appends="YES" id="iik-kn-xaw"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy5-w4-Nud">
-                    <rect key="frame" x="119" y="24" width="30" height="30"/>
-                    <state key="normal" title="黒"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluepen.png" translatesAutoresizingMaskIntoConstraints="NO" id="zJJ-DH-8w3">
+                    <rect key="frame" x="603" y="0.0" width="94" height="79"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="kMH-lt-Ma5"/>
+                    </constraints>
                     <connections>
-                        <action selector="tapBlack:" destination="-1" eventType="touchUpInside" id="Mwh-4K-def"/>
+                        <outletCollection property="gestureRecognizers" destination="z58-tf-mtb" appends="YES" id="H4r-fo-qZ8"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ3-JT-etO">
-                    <rect key="frame" x="423" y="24" width="30" height="30"/>
-                    <state key="normal" title="消"/>
-                    <connections>
-                        <action selector="tapErase:" destination="-1" eventType="touchUpInside" id="u0K-pP-ijw"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBy-OP-ldj">
-                    <rect key="frame" x="461" y="24" width="31" height="30"/>
-                    <state key="normal" title="ペン"/>
-                    <connections>
-                        <action selector="tapPencil:" destination="-1" eventType="touchUpInside" id="SDb-5Z-lgX"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-F9-pBb">
-                    <rect key="frame" x="500" y="24" width="30" height="30"/>
-                    <state key="normal" title="マ"/>
-                    <connections>
-                        <action selector="tapMarker:" destination="-1" eventType="touchUpInside" id="Rmf-vc-OJz"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc8-Gf-VXM">
-                    <rect key="frame" x="538" y="24" width="31" height="30"/>
-                    <state key="normal" title="定規"/>
-                    <connections>
-                        <action selector="tapRuler:" destination="-1" eventType="touchUpInside" id="dJ5-uu-iN0"/>
-                    </connections>
-                </button>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="PlY-Mu-N0z"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Qu9-bQ-v8F" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="8Hx-2e-1KZ"/>
-                <constraint firstItem="Qu9-bQ-v8F" firstAttribute="leading" secondItem="YdX-DU-zbY" secondAttribute="trailing" constant="8" symbolic="YES" id="8dC-V8-P8S"/>
-                <constraint firstItem="Mp0-F9-pBb" firstAttribute="leading" secondItem="sBy-OP-ldj" secondAttribute="trailing" constant="8" symbolic="YES" id="Ahj-Nr-P8k"/>
-                <constraint firstItem="sBy-OP-ldj" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="GUM-yq-2K2"/>
-                <constraint firstItem="CDO-9f-aJJ" firstAttribute="leading" secondItem="AM8-IT-IfS" secondAttribute="trailing" constant="8" symbolic="YES" id="JsN-A8-Mx8"/>
-                <constraint firstItem="HlK-lN-EXq" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="LVJ-0m-zdg"/>
-                <constraint firstItem="zhp-De-Bp1" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Pxm-eQ-l3o"/>
-                <constraint firstItem="nZ3-JT-etO" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Szt-JX-7Qw"/>
-                <constraint firstItem="387-dV-ORq" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="Ty8-A6-lMx"/>
-                <constraint firstItem="CDO-9f-aJJ" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="XND-VI-A8E"/>
-                <constraint firstItem="HlK-lN-EXq" firstAttribute="leading" secondItem="CDO-9f-aJJ" secondAttribute="trailing" constant="8" symbolic="YES" id="YL7-WP-mG3"/>
-                <constraint firstItem="zhp-De-Bp1" firstAttribute="leading" secondItem="Uy5-w4-Nud" secondAttribute="trailing" constant="8" symbolic="YES" id="YwF-g7-CEE"/>
-                <constraint firstItem="AM8-IT-IfS" firstAttribute="leading" secondItem="zhp-De-Bp1" secondAttribute="trailing" constant="8" symbolic="YES" id="ZIu-cp-43k"/>
-                <constraint firstItem="Uy5-w4-Nud" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="ZkH-Fy-7Bg"/>
-                <constraint firstItem="lc8-Gf-VXM" firstAttribute="leading" secondItem="Mp0-F9-pBb" secondAttribute="trailing" constant="8" symbolic="YES" id="a8C-C7-8Od"/>
-                <constraint firstItem="AM8-IT-IfS" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="bv7-Wd-ZuS"/>
-                <constraint firstItem="387-dV-ORq" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="fcI-Rd-jky"/>
-                <constraint firstItem="YdX-DU-zbY" firstAttribute="leading" secondItem="387-dV-ORq" secondAttribute="trailing" constant="8" symbolic="YES" id="jdh-zX-a51"/>
-                <constraint firstItem="sBy-OP-ldj" firstAttribute="leading" secondItem="nZ3-JT-etO" secondAttribute="trailing" constant="8" symbolic="YES" id="l3Q-QV-ePJ"/>
-                <constraint firstItem="387-dV-ORq" firstAttribute="leading" secondItem="HlK-lN-EXq" secondAttribute="trailing" constant="8" symbolic="YES" id="o34-My-g2p"/>
-                <constraint firstItem="Mp0-F9-pBb" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="qRg-hK-cOs"/>
-                <constraint firstItem="nZ3-JT-etO" firstAttribute="leading" secondItem="Qu9-bQ-v8F" secondAttribute="trailing" constant="8" symbolic="YES" id="qtM-Og-JhE"/>
-                <constraint firstItem="387-dV-ORq" firstAttribute="centerX" secondItem="8ej-kt-621" secondAttribute="centerX" id="x2u-Cq-2ci"/>
-                <constraint firstItem="YdX-DU-zbY" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="xeE-oL-BcU"/>
-                <constraint firstItem="lc8-Gf-VXM" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" constant="24" id="y44-aI-8Z1"/>
+                <constraint firstItem="zJJ-DH-8w3" firstAttribute="leading" secondItem="1aj-4m-pQq" secondAttribute="trailing" constant="5" id="2Wd-r4-cqB"/>
+                <constraint firstItem="g36-5F-Hqz" firstAttribute="leading" secondItem="aE8-ww-nRE" secondAttribute="trailing" constant="5" id="3K4-IF-toB"/>
+                <constraint firstItem="RhW-d2-gq8" firstAttribute="leading" secondItem="Eri-4k-DZK" secondAttribute="trailing" constant="5" id="3KS-NV-GUo"/>
+                <constraint firstItem="1aj-4m-pQq" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="5ey-n6-ccR"/>
+                <constraint firstItem="RhW-d2-gq8" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="9lE-ey-GXH"/>
+                <constraint firstItem="aE8-ww-nRE" firstAttribute="leading" secondItem="KdV-pF-JU6" secondAttribute="trailing" constant="5" id="BOB-St-gRu"/>
+                <constraint firstAttribute="bottom" secondItem="KdV-pF-JU6" secondAttribute="bottom" id="DOF-ep-m3W"/>
+                <constraint firstAttribute="bottom" secondItem="e1r-pE-BXp" secondAttribute="bottom" id="FJd-I0-0lt"/>
+                <constraint firstItem="g36-5F-Hqz" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="FpP-Xx-bQV"/>
+                <constraint firstItem="KdV-pF-JU6" firstAttribute="leading" secondItem="RhW-d2-gq8" secondAttribute="trailing" constant="5" id="HYZ-g3-108"/>
+                <constraint firstItem="Eri-4k-DZK" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="JwX-du-uxa"/>
+                <constraint firstItem="g36-5F-Hqz" firstAttribute="centerX" secondItem="8ej-kt-621" secondAttribute="centerX" id="NWL-Xb-PkK"/>
+                <constraint firstItem="Eri-4k-DZK" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="O2E-AG-IvG"/>
+                <constraint firstItem="KdV-pF-JU6" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="OgE-u1-nzy"/>
+                <constraint firstItem="e1r-pE-BXp" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="Oqd-cT-KUz"/>
+                <constraint firstItem="e1r-pE-BXp" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="PxS-05-dtD"/>
+                <constraint firstItem="aE8-ww-nRE" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="SL8-OD-BMC"/>
+                <constraint firstAttribute="bottom" secondItem="1aj-4m-pQq" secondAttribute="bottom" id="ShG-pD-wcf"/>
+                <constraint firstItem="g36-5F-Hqz" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="awo-dT-D96"/>
+                <constraint firstAttribute="bottom" secondItem="zJJ-DH-8w3" secondAttribute="bottom" id="cgM-5F-ZxI"/>
+                <constraint firstItem="1aj-4m-pQq" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="cqk-WQ-NCa"/>
+                <constraint firstItem="1aj-4m-pQq" firstAttribute="leading" secondItem="g36-5F-Hqz" secondAttribute="trailing" constant="5" id="drY-oe-FNU"/>
+                <constraint firstItem="RhW-d2-gq8" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="k3a-1L-F6p"/>
+                <constraint firstItem="zJJ-DH-8w3" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="k8O-NM-sqx"/>
+                <constraint firstAttribute="bottom" secondItem="RhW-d2-gq8" secondAttribute="bottom" id="kT2-0p-jOz"/>
+                <constraint firstAttribute="bottom" secondItem="aE8-ww-nRE" secondAttribute="bottom" id="kxb-vF-u0f"/>
+                <constraint firstItem="e1r-pE-BXp" firstAttribute="leading" secondItem="zJJ-DH-8w3" secondAttribute="trailing" constant="5" id="pVB-xJ-xIL"/>
+                <constraint firstItem="KdV-pF-JU6" firstAttribute="top" secondItem="8ej-kt-621" secondAttribute="top" id="qm1-gU-uwF"/>
+                <constraint firstAttribute="bottom" secondItem="g36-5F-Hqz" secondAttribute="bottom" id="uWK-fH-naZ"/>
+                <constraint firstItem="aE8-ww-nRE" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="wq7-GX-8Bm"/>
+                <constraint firstAttribute="bottom" secondItem="Eri-4k-DZK" secondAttribute="bottom" id="xOm-uh-LUK"/>
+                <constraint firstItem="zJJ-DH-8w3" firstAttribute="centerY" secondItem="8ej-kt-621" secondAttribute="centerY" id="xbO-u7-LUs"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="108.69565217391305" y="-332.47767857142856"/>
+            <point key="canvasLocation" x="294.20289855072468" y="-332.47767857142856"/>
         </view>
+        <tapGestureRecognizer id="ULf-Cg-Mjm">
+            <connections>
+                <action selector="tapBlack:" destination="-1" id="GwV-6V-bk5"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="gQY-qV-qbl">
+            <connections>
+                <action selector="tapRed:" destination="-1" id="iwR-uW-u3Z"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="yWM-WC-SsW">
+            <connections>
+                <action selector="tapOrange:" destination="-1" id="zdL-RZ-Pcc"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="nMR-qy-quK">
+            <connections>
+                <action selector="tapYellow:" destination="-1" id="hyh-Nh-sqp"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="f1q-mN-He2">
+            <connections>
+                <action selector="tapGreen:" destination="-1" id="WSX-eV-yRm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="vCm-TB-qnD">
+            <connections>
+                <action selector="tapPurple:" destination="-1" id="0zH-6b-DtS"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="z58-tf-mtb">
+            <connections>
+                <action selector="tapBlue:" destination="-1" id="qb1-ZV-QQp"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="mg9-t3-QSl">
+            <connections>
+                <action selector="tapErase:" destination="-1" id="BlZ-UU-nEi"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
+        <image name="bluckpen.png" width="128" height="130"/>
+        <image name="bluepen.png" width="132" height="134"/>
+        <image name="eraser.png" width="140" height="138"/>
+        <image name="greanpen.png" width="128" height="134"/>
+        <image name="orangepen.png" width="126" height="130"/>
+        <image name="purplepen.png" width="140" height="138"/>
+        <image name="redpen.png" width="126" height="128"/>
+        <image name="yellowpen.png" width="128" height="134"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

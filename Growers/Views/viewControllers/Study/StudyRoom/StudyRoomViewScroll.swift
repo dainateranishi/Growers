@@ -41,7 +41,7 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
         
         MemberTable.dataSource = self
         MemberTable.delegate = self
-        MemberTable.register(UINib(nibName: "MemberCell", bundle: nil), forCellReuseIdentifier: "MemberCell")
+        MemberTable.register(UINib(nibName: "MemberIconCell", bundle: nil), forCellReuseIdentifier: "MemberIconCell")
         self.setupMember()
         
         ScrollView.delegate = self
@@ -106,13 +106,13 @@ class StudyRoomViewController: UIViewController, PKToolPickerObserver, PKCanvasV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberCell", for: indexPath ) as! MemberCellTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MemberIconCell", for: indexPath ) as! MemberIconCellTableViewCell
         cell.setup(mem: MemList[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? MemberCellTableViewCell else {
+        guard let cell = tableView.cellForRow(at: indexPath) as? MemberIconCellTableViewCell else {
             return
         }
         
