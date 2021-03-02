@@ -79,7 +79,7 @@ class SignupViewController: UIViewController {
                                 "LoginTime": nowTimeString()
                             ])
                             
-                            let controller = StudyRoomViewController.instantiate()
+                            let controller = HomeViewController.instantiate()
                             self.present(controller, animated: true, completion: nil)
                             
                             SVProgressHUD.dismiss()

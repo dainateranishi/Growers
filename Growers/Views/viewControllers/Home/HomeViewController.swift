@@ -13,7 +13,8 @@ import RxCocoa
 import Firebase
 import FirebaseAuth
 
-class HomeViewController: UIViewController{
+class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
+    
     
     @IBOutlet weak var postTableView: UITableView!
     @IBOutlet weak var homeButton: UIButton!
@@ -28,5 +29,13 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
 }

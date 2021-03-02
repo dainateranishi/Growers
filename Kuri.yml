@@ -1,0 +1,26 @@
+DefaultTemplateDirectoryPath: ./Template/
+ProjectRootPath: ./
+ProjectFileName: Growers.xcodeproj
+GenerateRootPath: ./Growers/modules/
+Target: Growers
+ShouldRemoveLayerNameFromDirectory: false
+
+interactor:
+  ProjectRootPath: ./
+  ProjectFileName: Growers.xcodeproj
+  GenerateRootPath: ./Growers/data/
+  Target: Growers
+  ShouldRemoveLayerNameFromDirectory: true
+
+interactorTests:
+  ProjectRootPath: ./
+  ProjectFileName: Growers.xcodeproj
+  GenerateRootPath: ./Growers/data/
+  Target: GrowersTests
+  ShouldRemoveLayerNameFromDirectory: true
+
+presenterTests:
+  ProjectRootPath: ./
+  ProjectFileName: Growers.xcodeproj
+  GenerateRootPath: ./Growers/modules/
+  Target: GrowersTests
